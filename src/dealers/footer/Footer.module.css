@@ -1,0 +1,121 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 80px 150px 50px; 
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px; 
+  }
+  
+  .about,
+  .links,
+  .contact {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 30px;
+  }
+  
+  .about h3,
+  .links h3,
+  .contact h3 {
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 25px; 
+  }
+  
+  .about p {
+    color: #6c757d;
+    margin-bottom: 30px;
+    line-height: 1.8; 
+  }
+  
+  .subscribe h4 {
+    margin-bottom: 15px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .inputGroup input {
+    padding: 12px;
+    flex: 1;
+    border: 1px solid #ced4da;
+    border-right: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputGroup button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .inputGroup button:hover {
+    background-color: #0056b3;
+  }
+  
+  .linkColumns {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .linkColumns ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .linkColumns li {
+    color: #6c757d;
+    margin-bottom: 15px; 
+    font-size: 15px;
+  }
+  
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    color: #6c757d;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .icon {
+    color: #007bff;
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  
+  .bottom {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .bottom p {
+    color: #6c757d;
+    font-size: 15px;
+  }
+  
+  .heart {
+    color: #6c757d;
+  }
+  
+  .link {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
