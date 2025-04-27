@@ -1,4 +1,4 @@
-.featuredSection {
+.collectionSection {
     padding: 60px 100px;
     text-align: center;
   }
@@ -8,10 +8,11 @@
     margin-bottom: 40px;
   }
   
-  .featuredGrid {
+  .collectionGrid {
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
   }
   
   .card {
@@ -42,3 +43,15 @@
     color: #555;
   }
   
+
+  @media only screen and (max-width: 1180px) {
+
+  .collectionSection{
+    padding: 50px 10px;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+}

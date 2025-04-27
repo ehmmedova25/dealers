@@ -1,57 +1,57 @@
-.footer {
+.footerSection {
     background-color: #f8f9fa;
-    padding: 80px 150px 50px; 
+    padding: 0px 140px 50px;
     font-family: 'Arial', sans-serif;
-  }
-  
-  .top {
+}
+
+.footerTop {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 50px; 
-  }
-  
-  .about,
-  .links,
-  .contact {
+    margin-bottom: 50px;
+}
+
+.aboutSection,
+.quickLinksSection,
+.contactSection {
     flex: 1;
     min-width: 250px;
     margin-right: 30px;
-  }
-  
-  .about h3,
-  .links h3,
-  .contact h3 {
-    font-size: 20px; 
+    margin-bottom: 30px; /* Added bottom margin for spacing on smaller screens */
+}
+
+.aboutSection h3,
+.quickLinksSection h3,
+.contactSection h3 {
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 25px; 
-  }
-  
-  .about p {
+    margin-bottom: 25px;
+}
+
+.aboutSection p {
     color: #6c757d;
     margin-bottom: 30px;
-    line-height: 1.8; 
-  }
-  
-  .subscribe h4 {
+    line-height: 1.8;
+}
+
+.subscriptionSection h4 {
     margin-bottom: 15px;
-  }
-  
-  .inputGroup {
+}
+
+.emailInputGroup {
     display: flex;
     margin-top: 15px;
-  }
-  
-  .inputGroup input {
+}
+
+.emailInputGroup input {
     padding: 12px;
     flex: 1;
     border: 1px solid #ced4da;
-    border-right: none;
     outline: none;
     border-radius: 4px 0 0 4px;
-  }
-  
-  .inputGroup button {
+}
+
+.emailInputGroup button {
     padding: 12px 24px;
     background-color: #007bff;
     border: none;
@@ -59,63 +59,141 @@
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .inputGroup button:hover {
+}
+
+.emailInputGroup button:hover {
     background-color: #0056b3;
-  }
-  
-  .linkColumns {
+}
+
+.linkColumns {
     display: flex;
     gap: 50px;
-  }
-  
-  .linkColumns ul {
+}
+
+.linkColumns ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .linkColumns li {
+}
+
+.linkColumns li {
     color: #6c757d;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     font-size: 15px;
-  }
-  
-  .contact ul {
+}
+
+.contactSection ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .contact li {
+}
+
+.contactSection li {
     color: #6c757d;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     font-size: 15px;
-  }
-  
-  .icon {
+}
+
+.contactIcon {
     color: #007bff;
     margin-right: 12px;
     font-size: 18px;
-  }
-  
-  .bottom {
+}
+
+.footerBottom {
     text-align: center;
     padding-top: 30px;
-  }
-  
-  .bottom p {
+}
+
+.footerBottom p {
     color: #6c757d;
     font-size: 15px;
-  }
-  
-  .heart {
+}
+
+.heartIcon {
     color: #6c757d;
-  }
-  
-  .link {
+}
+
+.creatorLink {
     color: #007bff;
     cursor: pointer;
-  }
-  
+}
+
+
+@media (max-width: 1024px) {
+    .footerSection {
+        padding: 0 70px 50px; 
+    }
+
+    .footerTop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutSection,
+    .quickLinksSection,
+    .contactSection {
+        margin-right: 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    .linkColumns {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .linkColumns ul {
+        padding-left: 0;
+    }
+
+    .emailInputGroup {
+        flex-direction: column; 
+    }
+
+    .emailInputGroup input,
+    .emailInputGroup button {
+        width: 70%; 
+        margin-bottom: 10px;
+    }
+
+    .footerBottom p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerSection {
+        padding: 0 50px 50px; 
+    }
+
+    .footerTop {
+        margin-bottom: 30px; 
+    }
+
+    .linkColumns {
+        gap: 20px;
+    }
+
+    .contactSection li {
+        font-size: 14px; 
+    }
+
+    .emailInputGroup {
+        flex-direction: column;
+    }
+
+    .emailInputGroup button {
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerSection {
+        padding: 0 30px 50px; 
+    }
+
+    .footerBottom p {
+        font-size: 12px; 
+    }
+}

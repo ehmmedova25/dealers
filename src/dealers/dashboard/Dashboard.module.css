@@ -1,0 +1,134 @@
+.dashboard {
+    background: linear-gradient(135deg, #f8b3d0, #f1a7d2);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formGroup {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 80%; 
+    padding: 14px;
+    margin: 15px 0;
+    border: 2px solid #f1a7d2;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #f8b3d0;
+    outline: none;
+}
+
+button {
+    padding: 14px 25px;
+    background-color: #f1a7d2;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    width: 80%;  }
+
+button:hover {
+    background-color: #f8b3d0;
+}
+
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.title {
+    font-size: 1.3rem;
+    color: #f8b3d0;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.bodyicon, .pen {
+    position: absolute;
+    font-size: 1.8rem;
+    color: #f8b3d0;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.bodyicon {
+    top: 10px;
+    right: 10px;
+}
+
+.pen {
+    bottom: 10px;
+    right: 10px;
+}
+
+.bodyicon:hover, .pen:hover {
+    color: #f1a7d2;
+}

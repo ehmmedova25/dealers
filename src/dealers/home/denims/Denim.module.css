@@ -1,4 +1,7 @@
-.container {
+
+
+
+.denimContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +15,7 @@
   justify-content: center;
 }
 
-.image {
+.denimImage {
   max-width: 100%;
   height: 700px;
 }
@@ -24,31 +27,67 @@
 
 .subtitle {
   letter-spacing: 3px;
-  font-size: 18px;  
+  font-size: 18px;
   color: #555;
   margin-bottom: 20px;
 }
 
 .title {
-  font-size: 64px;  
+  font-size: 64px;
   font-weight: bold;
   color: #000;
   margin-bottom: 30px;
   line-height: 1.2;
 }
 
-.button {
-  padding: 16px 40px; 
+.shopNowButton {
+  padding: 16px 40px;
   background-color: #000;
   color: #fff;
+  border-radius: 0;
+  width:190px;
   border: none;
   cursor: pointer;
-  font-size: 18px;  
+  font-size: 18px;
   letter-spacing: 1px;
   transition: background-color 0.3s;
 }
 
-
-.button:hover {
+.shopNowButton:hover {
   background-color: #333;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+  .denimContainer {
+      flex-direction: column;
+      gap: 30px;
+  }
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+  .denimImage{
+      height: 500px;
+  }
+
+  .title{
+      font-size: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+
+  .denimImage{
+      height: 350px;
+  }
+
+  .title{
+      font-size: 30px;
+  }
+
 }
